@@ -4,11 +4,11 @@ import CommentList from '../components/CommentList'
 import { initComments, deleteComment } from '../reducers/comments'
 import PropTypes from 'prop-types'
 class CommentListContainer extends Component {
-  // static propTypes = {
-  //   comments: PropTypes.array,
-  //   initComments: PropTypes.func,
-  //   onDeleteComment: PropTypes.func
-  // }
+  static propTypes = {
+    comments: PropTypes.array,
+    initComments: PropTypes.func,
+    onDeleteComment: PropTypes.func
+  }
 
   componentWillMount () {
     this._loadComments()

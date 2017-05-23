@@ -4,10 +4,10 @@ import CommentInput from '../components/CommentInput'
 import { addComment } from '../reducers/comments'
 import PropTypes from 'prop-types'
 class CommentInputContainer extends Component {
-  // static propTypes = {
-  //   comments: PropTypes.array,
-  //   onSubmit: PropTypes.func
-  // }
+  static propTypes = {
+    comments: PropTypes.array,
+    onSubmit: PropTypes.func
+  }
 
   constructor () {
     super()

@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 export default class Comment extends Component {
-  // static propTypes = {
-  //   comment: PropTypes.object.isRequired,
-  //   onDeleteComment: PropTypes.func,
-  //   index: PropTypes.number
-  // }
+  static propTypes = {
+    comment: PropTypes.object.isRequired,
+    onDeleteComment: PropTypes.func,
+    index: PropTypes.number
+  }
 
   constructor () {
     super()

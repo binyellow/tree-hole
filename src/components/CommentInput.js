@@ -1,15 +1,15 @@
 import React, { Component} from 'react'
 import PropTypes from 'prop-types'
 export default class CommentInput extends Component {
-  // static propTypes = {
-  //   username: PropTypes.any,
-  //   onSubmit: PropTypes.func,
-  //   onUserNameInputBlur: PropTypes.func
-  // }
+  static propTypes = {
+    username: PropTypes.any,
+    onSubmit: PropTypes.func,
+    onUserNameInputBlur: PropTypes.func
+  }
 
-  // static defaultProps = {
-  //   username: ''
-  // }
+  static defaultProps = {
+    username: ''
+  }
 
   constructor (props) {
     super(props)
