@@ -33,7 +33,7 @@ class CommentInputContainer extends Component {
     if (!comment) return
     if (!comment.username) return alert('请输入用户名')
     if (!comment.content) return alert('请输入评论内容')
-    const { comments } = this.props//解析赋值
+    const { comments } = this.props//解析赋值 var comments = this.props.comments
     const newComments = [...comments, comment]//input传过来一个comment{username，content,createdTime}
     localStorage.setItem('comments', JSON.stringify(newComments))
     if (this.props.onSubmit) {
